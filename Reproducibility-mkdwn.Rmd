@@ -1,0 +1,29 @@
+---
+title: "NGS-Reproducibility"
+author: "C. A. Hamm"
+date: "August 25, 2015"
+output: html_document
+---
+```{r golobal_options, include = FALSE}
+knitr::opts_chunk$set(fig.width = 12, fig.eight = 8, echo = FALSE, warnings = FALSE, message = FALSE)
+```
+
+```{r Set Seed, eval = TRUE, echo = TRUE}
+set.seed(304957475)
+```
+
+
+```{r example chunk, echo = TRUE, eval = TRUE}
+x <- sample(1:100, 5)
+x
+```
+
+Last night I saw `r 5 + 2` shooting starts!
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars, pch = 19, las = 1)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
